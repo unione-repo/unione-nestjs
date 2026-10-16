@@ -1,0 +1,44 @@
+{
+  "name": "unione-nestjs",
+  "version": "1.1.2",
+  "description": "UniOne Web API for NestJS: API client module, webhooks, Nodemailer transport",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "AGENTS.md"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "unione": "^2.1.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=10",
+    "@nestjs/core": ">=10",
+    "reflect-metadata": "*"
+  },
+  "keywords": [
+    "unione",
+    "nestjs",
+    "email",
+    "nodemailer",
+    "webhook"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unione-repo/unione-nestjs.git"
+  },
+  "homepage": "https://docs.unione.io/en/web-api-ref"
+}
