@@ -1,6 +1,6 @@
 {
   "name": "unione-nestjs",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "UniOne Web API for NestJS: API client module, webhooks, Nodemailer transport",
   "type": "module",
   "main": "./src/index.js",
@@ -21,7 +21,7 @@
     "node": ">=20.19"
   },
   "dependencies": {
-    "unione": "^2.2.3"
+    "unione": "^2.2.4"
   },
   "peerDependencies": {
     "@nestjs/common": ">=10",
