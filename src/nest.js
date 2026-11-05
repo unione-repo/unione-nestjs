@@ -70,6 +70,10 @@ function webhookController(path) {
     constructor(options, webhooks) {
       this.options = options ?? {};
       this.key = resolveOptions(this.options).webhookKey;
+      if (!this.key) {
+        console.warn("UniOne: the webhook key is not set (webhookKey / apiKey options, UNIONE_WEBHOOK_KEY / UNIONE_API_KEY):"
+          + " every webhook will be answered 401.");
+      }
       this.webhooks = webhooks;
     }
 
